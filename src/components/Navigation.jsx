@@ -53,7 +53,7 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <button
-            onClick={() => window.open('https://wa.me/919876543210?text=Hi, I would like to inquire about your products', '_blank')}
+            onClick={() => window.open('https://wa.me/9845302211?text=Hi, I would like to inquire about your products', '_blank')}
             className="hidden md:block bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:shadow-lg hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105"
           >
             Enquire Now

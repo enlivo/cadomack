@@ -144,7 +144,7 @@ export const products = [
     name: "Calchalk",
     image: "/products/calchalk.jpeg",
     description: "Bone health supplement supporting calcium absorption and strength",
-    category: "Nutraceuticals",
+    category: "Gynecology",
     composition: "Calcium Citrate, Magnesium, Zinc & Vitamin D3",
     uses: [
       "Bone Strength",
