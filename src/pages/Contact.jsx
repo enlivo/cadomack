@@ -16,7 +16,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = `Hi, my name is ${formData.name}. ${formData.message}`;
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/919845302211text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -122,8 +122,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-bold text-blue-950 mb-2">Phone Line</h3>
                     <p className="text-slate-600 leading-relaxed">
-                      <a href="tel:+919876543210" className="hover:text-emerald-600 transition-colors">+91 98453 02211</a><br />
-                      <a href="tel:+918012345678" className="hover:text-emerald-600 transition-colors">+91 98453 02277</a>
+                      <a href="tel:+919845302211" className="hover:text-emerald-600 transition-colors">+91 98453 02211</a><br />
+                      <a href="tel:+919845302277" className="hover:text-emerald-600 transition-colors">+91 98453 02277</a>
                     </p>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function Contact() {
 
               {/* WhatsApp CTA */}
               <button
-                onClick={() => window.open('https://wa.me/919876543210', '_blank')}
+                onClick={() => window.open('https://wa.me/919845302211', '_blank')}
                 className="mt-8 w-full bg-green-500 text-white font-bold py-4 rounded-lg hover:bg-green-600 transition-all flex items-center justify-center gap-2"
               >
                 💬 Chat on WhatsApp

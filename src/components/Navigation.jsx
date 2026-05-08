@@ -87,7 +87,7 @@ export default function Navigation() {
             ))}
             <button
               onClick={() => {
-                window.open('https://wa.me/919876543210?text=Hi, I would like to inquire about your products', '_blank');
+                window.open('https://wa.me/9845302211?text=Hi, I would like to inquire about your products', '_blank');
                 setMobileMenuOpen(false);
               }}
               className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 py-3 rounded-lg font-bold text-sm mt-4"
