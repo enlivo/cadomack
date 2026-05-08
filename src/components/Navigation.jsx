@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,11 +10,11 @@ export default function Navigation() {
   const isActive = (path) => location.pathname === path;
 
   const navItems = [
-    { label: 'Home', path: '/' },
-    { label: 'About Us', path: '/about' },
-    { label: 'Products', path: '/products' },
-    { label: 'Quality', path: '/quality' },
-    { label: 'Contact', path: '/contact' },
+    { label: "Home", path: "/" },
+    { label: "About Us", path: "/about" },
+    { label: "Products", path: "/products" },
+    { label: "Quality", path: "/quality" },
+    { label: "Contact", path: "/contact" },
   ];
 
   return (
@@ -42,8 +42,8 @@ export default function Navigation() {
                 to={item.path}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm uppercase tracking-wide transition-all duration-300 ${
                   isActive(item.path)
-                    ? 'bg-emerald-50 text-emerald-600 border-b-2 border-emerald-600'
-                    : 'text-slate-600 hover:text-emerald-600 hover:bg-slate-50'
+                    ? "bg-emerald-50 text-emerald-600 border-b-2 border-emerald-600"
+                    : "text-slate-600 hover:text-emerald-600 hover:bg-slate-50"
                 }`}
               >
                 {item.label}
@@ -53,7 +53,12 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <button
-            onClick={() => window.open('https://wa.me/9845302211?text=Hi, I would like to inquire about your products', '_blank')}
+            onClick={() =>
+              window.open(
+                "https://wa.me/9845302211?text=Hi, I would like to inquire about your products",
+                "_blank",
+              )
+            }
             className="hidden md:block bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:shadow-lg hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105"
           >
             Enquire Now
@@ -64,7 +69,11 @@ export default function Navigation() {
             className="md:hidden text-slate-800 p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -78,8 +87,8 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`block px-4 py-3 rounded-lg font-semibold text-sm uppercase transition-all ${
                   isActive(item.path)
-                    ? 'bg-emerald-50 text-emerald-600 border-l-4 border-emerald-600'
-                    : 'text-slate-600 hover:bg-slate-50'
+                    ? "bg-emerald-50 text-emerald-600 border-l-4 border-emerald-600"
+                    : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
                 {item.label}
@@ -87,7 +96,10 @@ export default function Navigation() {
             ))}
             <button
               onClick={() => {
-                window.open('https://wa.me/919876543210?text=Hi, I would like to inquire about your products', '_blank');
+                window.open(
+                  "https://wa.me/919876543210?text=Hi, I would like to inquire about your products",
+                  "_blank",
+                );
                 setMobileMenuOpen(false);
               }}
               className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 py-3 rounded-lg font-bold text-sm mt-4"
