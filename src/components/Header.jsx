@@ -30,7 +30,7 @@ export default function Header({ isScrolled, mobileMenuOpen, setMobileMenuOpen, 
               </button>
             ))}
             <button 
-              onClick={() => window.open('https://wa.me/919876543210?text=Hi, I would like to inquire about your products', '_blank')}
+              onClick={() => window.open('https://wa.me/919845302211?text=Hi, I would like to inquire about your products', '_blank')}
               className="bg-emerald-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-600/30 hover:shadow-emerald-600/50"
             >
               Enquire Now
