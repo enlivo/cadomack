@@ -100,7 +100,7 @@ export default function App() {
                 </div>
                 <div className="w-full h-full bg-slate-200 rounded-xl shadow-lg relative z-10 flex items-center justify-center text-slate-400 overflow-hidden">
                    <img 
-                    src="src\assets\about.png" 
+                    src="/about-us.jpg"
                     alt="Laboratory" 
                     className="w-full h-full object-cover"
                    />
